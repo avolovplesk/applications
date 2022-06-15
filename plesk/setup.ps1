@@ -2,7 +2,7 @@ function configurePleskTrial($user, $passwd, $email) {
     plesk bin init_conf --init -name $user -passwd $passwd -email $email -license_agreed true -trial_license true
 }
 
-function congnigurePleskLicense($user, $passwd, $email, $licenseKey) {
+function configurePleskLicense($user, $passwd, $email, $licenseKey) {
     plesk bin init_conf --init -name $user -passwd $passwd -email $email -license_agreed true
     plesk bin license --install $licenseKey
 }
